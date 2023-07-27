@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <!-- Metadatos -->
+  <meta charset="utf-8">
+  <meta name="author" content="Jane Doe">
+  <meta name="description" content="Portafolio de desarrollo web de Jane Doe">
+  <meta name="keywords" content="HTML, CSS, JavaScript, React">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Titulo -->
+  <title>Jimena García | Desarrollo Web Front-End</title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="imagenes/icono.png">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <!-- Iconos de Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <!-- CSS -->
+  <link href="style.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Rubik+Dirt&family=Share+Tech+Mono&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <!-- Barra de navegacion -->
+  <nav class="navbar navbar-expand-md navbar-light">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler"
+        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar-toggler">
+        <a class="navbar-brand" href="#">
+          <img src="imagenes/Captura de pantalla 2023-07-27 071427.png" width="50" alt="Logo de la página web">
+        </a>
+        <ul class="navbar-nav d-flex justify-content-center align-items-center">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#sobre-mi">Sobre mí</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#proyectos">Proyectos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#testimonios">Testimonios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contacto">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Seccion Hero -->
+  <section class="hero align-items-stretch">
+    <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
+      <img class="hero-imagen-desarrollador rounded-circle" src="imagenes/Jimena.jpeg" alt="Foto de Jane Doe">
+      <h1>Hola, soy Jimena García</h1>
+      <!--<h2>Estudiante de Ingeniería de Software y desarrollo sitios web</h2>-->
+
+      <!--Animación con JavaScript-->
+      <h2 class="text-primary mb-4" id="typewriter"></h2>
+    </div>
+    <div class="hero-inferior">
+      <img class="hero-inferior-imagen img-fluid" src="imagenes/hero-inferior.svg"
+        alt="Monitor, laptop y logos de HTML, CSS, JavaScript y React.">
+    </div>
+  </section>
+
+  <!-- Sobre mi -->
+  <section id="sobre-mi" class="sobre-mi seccion-oscura">
+    <div class="contenedor">
+      <h2 class="seccion-titulo">Conoce a Jimena García</h2>
+      <p class="seccion-texto">Estudiante de Ingeniería de Software en la Universidad Autónoma de Yucatán. Soy proactiva
+        y tengo muchas ganas de aprender, cuento con conocimientos sobre HTML, CSS, y lenguajes de programacion como C y
+        Phyton. Me gusta trabajar en equipo y me desenvuelvo bien con gente nueva.</p>
+    </div>
+  </section>
+
+  <!-- Experiencia -->
+  <section class="experiencia seccion-clara">
+    <div class="container text-center">
+      <div class="row">
+        <!-- Desarrollo Web -->
+        <div class="columna col">
+          <i class="bi bi-laptop"></i>
+          <p class="experiencia-titulo">Desarrollo Web</p>
+          <p>Diseño paginas web con ayuda de HTML, CSS, JavaScript, entre otros... </p>
+          <div class="badges-contenedor">
+            <span class="badge text-bg-primary">HTML</span>
+            <span class="badge text-bg-primary">CSS</span>
+            <span class="badge text-bg-primary">JavaScript</span>
+            <span class="badge text-bg-primary">React</span>
+          </div>
+        </div>
+        <!-- Estudiante -->
+        <div class="columna col">
+          <i class="bi bi-laptop"></i>
+          <p class="experiencia-titulo">Estudiante</p>
+          <p>Estudiante de Ingeniería de Software en la Universidad Autónoma de Yucatán, actualmente me encuentro en el
+            3er semestre de la carrera </p>
+          <div class="badges-contenedor">
+            <span class="badge text-bg-primary">Tecnolochicas PRO</span>
+            <span class="badge text-bg-primary">Desarrollo Web</span>
+            <span class="badge text-bg-primary">C</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Proyectos -->
+  <section id="proyectos" class="proyectos-recientes seccion-clara d-flex flex-column">
+    <h2 class="seccion-titulo texto-negro">Mis proyectos recientes</h2>
+    <h3 class="seccion-descripcion">Estos son algunos proyectos que he creado recientemente...</h3>
+    <!-- Galeria de Proyectos -->
+    <div class="container text-center proyectos-contenedor">
+      <div class="row">
+        <!-- Proyecto 1 -->
+        <div class="col">
+          <div class="proyecto">
+            <img src="imagenes/proyecto1.png" alt="Clon de Google">
+            <div class="overlay">
+              <p>Clon de Google</p>
+              <div class="iconos-contenedor">
+                <a href="https://github.com/jimena-garcia/Clon-Google" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-github"></i>
+                </a>
+                <a href="https://clongoogle-jimena.netlify.app/" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-laptop"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Proyecto 2 -->
+        <div class="col">
+          <div class="proyecto">
+            <img src="imagenes/proyecto2.png" alt="Animalia">
+            <div class="overlay">
+              <p>Animalia</p>
+              <div class="iconos-contenedor">
+                <a href="https://github.com/jimena-garcia/Animalia" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-github"></i>
+                </a>
+                <a href="https://animalia-jimena.netlify.app/" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-laptop"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+  </section>
+
+  <!-- Testimonios -->
+  <section id="testimonios" class="testimonios seccion-clara">
+    <h2 class="seccion-titulo">Testimonios</h2>
+    <h3 class="seccion-descripcion">Estos son algunos testimonios de mis clientes...</h3>
+
+    <!-- Carrusel -->
+    <div id="testimonios-carrusel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="container">
+            <img class="testimonio-imagen rounded-circle" src="imagenes/Miranda.JPG" alt="Foto de Gino">
+            <p class="testimonio-texto">Jimena Garcia ha demostrado ser una excelente estudiante!. Durante el desarrollo
+              de proyectos, ha mostrado un sólido dominio de tecnologías front-end como HTML, CSS y JavaScript, logrando
+              crear interfaces de usuario atractivas y funcionales.”</p>
+            <div class="testimonio-info">
+              <p class="cliente">Miranda Jaramillo</p>
+              <p class="cargo">Software Enginee</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <img class="testimonio-imagen rounded-circle" src="imagenes/cliente2.svg" alt="Foto de Nora">
+            <p class="testimonio-texto">He colaborado con Jimena García durante el bootcamp de Tecnolochicas Pro 2023 y
+              me
+              impresiona mucho su proactividad y entusiasmo por aprender nuevas tecnologías. No solo participa de manera
+              constante sino también ha demostrado su responsabilidad y liderazgo al brindar apoyo cuando se requiere.
+            </p>
+            <div class="testimonio-info">
+              <p class="cliente"> Samantha Munguía Alfaro</p>
+              <p class="cargo">Estudiante en Desarrollo de Software</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <img class="testimonio-imagen rounded-circle" src="imagenes/testimonio3.jpg" alt="Foto de Leonardo">
+            <p class="testimonio-texto">Durante el bootcamp de Tecnolochicas Pro 2023, tuve el gusto de trabajar con
+              Jimena García y me complace reconocerla como una talentosa desarrolladora web. Es una persona que le
+              gusta aprender mucho para mejorar en sus habilidades cada día. Ha demostrado ser una persona responsable,
+              comprometida y trabajadora.
+            </p>
+            <div class="testimonio-info">
+              <p class="cliente">Valerie Cristel Lara Díaz</p>
+              <p class="cargo">estudiante de la Licenciatura en Informática Administrativa en la UAEMéx</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="contacto seccion-oscura">
+    <div class="container">
+      <div class="container text-center rectangulo d-flex justify-content-evenly">
+        <div class="row">
+          <div class="col-12 col-md-4 seccion-titulo">
+            ¡Hablemos!
+          </div>
+          <div class="col-12 col-md-4 descripcion">
+            Contáctame para iniciar tu proyecto de desarrollo web y haré que tu visión se vuelva realidad.
+          </div>
+          <div class="col-12 col-md-4">
+            <a href="mailto:jimena.garr2407@gmail.com">
+              <button type="button">
+                Contacto
+                <i class="bi bi-envelope-check-fill"></i>
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pie de pagina (footer) -->
+  <footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center">
+    <img class="footer-logo" src="imagenes/Captura de pantalla 2023-07-27 071427.png" alt="Logo del portafolio">
+    <p class="footer-texto text-center">«Qué maravilloso es que nadie tenga que esperar ni un segundo para empezar a
+      mejorar el mundo»<br> —Ana Frank</p>
+    <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
+      <a href="https://twitter.com/Jimmy_garr" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-twitter"></i>
+      </a>
+      <a href="https://github.com/jimena-garcia" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-github"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/jimena-garcia-6b23b4285/" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-linkedin"></i>
+      </a>
+      <a href="#" target="https://www.instagram.com/jimena_garr/" rel="noopener noreferrer">
+        <i class="bi bi-instagram"></i>
+      </a>
+      <a href="mailto:jimena.garr2407@gmail.com" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-envelope"></i>
+      </a>
+    </div>
+    <div class="derechos-de-autor">Creado por Jimena García (2023) &#169;</div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+
+  <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+  <script src="main.js"></script>
+
+</body>
+
+</html>
